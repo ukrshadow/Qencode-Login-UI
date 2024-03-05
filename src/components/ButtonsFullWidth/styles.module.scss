@@ -1,0 +1,10 @@
+@import "/src/assets/styles/mixins/mixins.scss";
+
+.buttons {
+  &--accept {
+    background-color: #316fea !important;
+    color: #fff !important;
+    border: none !important;
+  }
+  @include button;
+}

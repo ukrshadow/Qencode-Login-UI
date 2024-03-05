@@ -1,0 +1,63 @@
+.input {
+  max-width: 400px;
+  height: 48px;
+  width: 100%;
+  border-radius: 6px;
+  padding: 14px 12px;
+  border: 1.2px solid #d3d8dc;
+  outline: none;
+  font-size: 15px;
+  line-height: 20px;
+  margin-bottom: 10px;
+
+  &::-webkit-input-placeholder {
+    color: #a1abb5;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  &::-moz-placeholder {
+    color: #a1abb5;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  &:-ms-input-placeholder {
+    color: #a1abb5;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  &::-ms-input-placeholder {
+    color: #a1abb5;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  &::placeholder {
+    color: #a1abb5;
+    font-size: 15px;
+    line-height: 20px;
+  }
+}
+
+.fieldset {
+  position: relative;
+}
+
+.isPassword {
+  margin-bottom: 15px;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}
+.visiblePassword {
+  position: absolute;
+  right: 10px;
+  top: calc((100% - 14px) / 2);
+  cursor: pointer;
+  > svg {
+    width: 18px;
+    height: 14px;
+  }
+}

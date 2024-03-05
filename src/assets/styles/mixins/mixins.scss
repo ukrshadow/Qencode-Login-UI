@@ -1,0 +1,21 @@
+@mixin logo {
+  margin-bottom: 80px;
+}
+@mixin heading {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 39px;
+  margin-bottom: 40px;
+}
+@mixin button {
+  width: 100%;
+  color: #060e1e;
+  background-color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 21px;
+  padding: 13px 0px;
+  border-radius: 8px;
+  border: 1.2px solid #d3d8dc;
+  margin-bottom: 20px;
+}

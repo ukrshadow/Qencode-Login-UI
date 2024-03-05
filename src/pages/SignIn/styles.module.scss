@@ -1,0 +1,110 @@
+@import "/src/assets/styles/mixins/mixins.scss";
+
+.signIn {
+  max-width: 400px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0 auto;
+
+  &__logo {
+    @include logo;
+  }
+
+  &__heading {
+    @include heading;
+  }
+
+  &__actions {
+    gap: 16px;
+    display: flex;
+    margin-bottom: 30px;
+
+    & > button {
+      border: 1.2px solid#d3d8dc;
+      padding: 14px 60px;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      background-color: #fff;
+      transition: background-color 0.15s ease;
+      gap: 10px;
+    }
+    :hover {
+      background-color: #eef1f3;
+    }
+  }
+
+  &__divider {
+    width: 100%;
+    position: relative;
+    margin-bottom: 30px;
+
+    & > hr {
+      border-top: 1px solid #e3e6e9;
+    }
+
+    & > span {
+      position: absolute;
+      top: 0px;
+      left: calc((100% - 28px) / 2);
+      background: #fff;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 16px;
+      color: #bec5cc;
+      text-transform: uppercase;
+      padding: 0 5px;
+    }
+  }
+
+  &__registration {
+    font-size: 15px;
+    line-height: 20px;
+
+    a {
+      line-height: 16px;
+      color: #316fea;
+    }
+  }
+}
+
+.form {
+  max-width: 400px;
+  width: 100%;
+
+  &__fieldset {
+    margin-bottom: 30px;
+    /* &-password {
+      margin-bottom: 15px;
+      display: flex;
+      position: relative;
+      flex-direction: column;
+      & > div {
+        position: absolute;
+        right: 10px;
+        top: calc((100% - 24px) / 2);
+        > svg {
+          width: 18px;
+          height: 14px;
+        }
+      }
+    } */
+    & > span {
+      color: red;
+    }
+  }
+
+  & > a {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  & > button {
+    @include button;
+  }
+}
