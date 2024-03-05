@@ -7,9 +7,9 @@ const Routing = () => {
   return (
     <BrowserRouter basename="/">
       <Routes>
-        <Route index path="/signIn" element={<SignIn />} />
-        <Route index path="/reset-password" element={<ResetPassword />} />
-        <Route index path="/new-password" element={<NewPassword />} />
+        <Route index path="/" element={<SignIn />} />
+        <Route path="/reset-password" element={<ResetPassword />} />
+        <Route path="/new-password" element={<NewPassword />} />
         <Route path="*" element={<p>404 not found</p>} />
       </Routes>
     </BrowserRouter>
